@@ -1,3 +1,5 @@
+import { API_BASE_URL } from "../../utils/constants";
+
 import {
   CalendarCheck,
   Mail,
@@ -62,7 +64,7 @@ const BookingForm = () => {
       setError("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/bookings",
+        `${API_BASE_URL}/api/bookings`,
         {
           name: formData.name,
           phone: formData.phone,

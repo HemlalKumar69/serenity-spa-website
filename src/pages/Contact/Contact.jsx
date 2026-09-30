@@ -399,6 +399,7 @@
 // export default Contact;
 
 
+import { API_BASE_URL } from "../../utils/constants";
 
 import {
   Clock3,
@@ -452,7 +453,7 @@ const Contact = () => {
       setError("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/contacts",
+        `${API_BASE_URL}/api/contacts`,
         {
           name: formData.name,
           email: formData.email,

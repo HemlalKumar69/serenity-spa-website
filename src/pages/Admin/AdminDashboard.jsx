@@ -1,3 +1,5 @@
+import { API_BASE_URL } from "../../utils/constants";
+
 import { useEffect, useState } from "react";
 import axios from "axios";
 
@@ -49,12 +51,12 @@ const AdminDashboard = () => {
             const [bookingResponse, contactResponse] =
                 await Promise.all([
                     axios.get(
-                        "http://localhost:5000/api/bookings",
+                        `${API_BASE_URL}/api/bookings`,
                         config
                     ),
 
                     axios.get(
-                        "http://localhost:5000/api/contacts",
+                        `${API_BASE_URL}/api/contacts`,
                         config
                     ),
                 ]);
@@ -113,7 +115,7 @@ const AdminDashboard = () => {
             setError("");
 
             const response = await axios.patch(
-                `http://localhost:5000/api/bookings/${bookingId}/status`,
+                `${API_BASE_URL}/api/bookings/${bookingId}/status`,
                 {
                     status,
                 },
@@ -182,7 +184,7 @@ const AdminDashboard = () => {
             setError("");
 
             const response = await axios.delete(
-                `http://localhost:5000/api/bookings/${bookingId}`,
+                `${API_BASE_URL}/api/bookings/${bookingId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${currentToken}`,
@@ -238,7 +240,7 @@ const AdminDashboard = () => {
             setError("");
 
             const response = await axios.patch(
-                `http://localhost:5000/api/contacts/${contactId}/status`,
+                `${API_BASE_URL}/api/contacts/${contactId}/status`,
                 {
                     status,
                 },
@@ -306,7 +308,7 @@ const AdminDashboard = () => {
             setError("");
 
             const response = await axios.patch(
-                `http://localhost:5000/api/contacts/${contactId}/reply`,
+                `${API_BASE_URL}/api/contacts/${contactId}/reply`,
                 {
                     reply: reply.trim(),
                 },
@@ -377,7 +379,7 @@ const AdminDashboard = () => {
             setError("");
 
             const response = await axios.delete(
-                `http://localhost:5000/api/contacts/${contactId}`,
+                `${API_BASE_URL}/api/contacts/${contactId}`,
                 {
                     headers: {
                         Authorization: `Bearer ${currentToken}`,

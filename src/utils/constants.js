@@ -1,3 +1,6 @@
+export const API_BASE_URL =
+  "https://serenity-spa-website.onrender.com";
+
 // Serenity Spa Business Location
 
 export const SPA_LOCATION = {

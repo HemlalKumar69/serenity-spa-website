@@ -1,3 +1,5 @@
+import { API_BASE_URL } from "../../utils/constants";
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { LockKeyhole, Mail, LogIn } from "lucide-react";
@@ -37,7 +39,7 @@ const navigate = useNavigate();
       setError("");
 
       const response = await axios.post(
-        "http://localhost:5000/api/admin/login",
+        `${API_BASE_URL}/api/admin/login`,
         {
           email: formData.email,
           password: formData.password,
