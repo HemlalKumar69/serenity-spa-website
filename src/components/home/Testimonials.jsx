@@ -23,7 +23,7 @@ const Testimonials = () => {
             </h2>
 
             <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
-              Discover why our clients choose Serenity Spa whenever they need
+              Discover why our clients choose Suman Day/Night Spa whenever they need
               relaxation, care and a little time for themselves.
             </p>
           </div>
@@ -96,7 +96,7 @@ const Testimonials = () => {
               />
 
               <span className="font-bold text-gray-900">
-                4.9/5
+                5/5
               </span>
             </div>
 

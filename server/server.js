@@ -29,7 +29,7 @@ app.use("/api/admin", adminRoutes);
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "Serenity Spa Backend is running successfully!",
+    message: "Suman Day/Night Spa Backend is running successfully!",
   });
 });
 

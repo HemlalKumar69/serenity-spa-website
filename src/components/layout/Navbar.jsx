@@ -11,7 +11,7 @@ const Navbar = () => {
     { name: "Services", path: "/services" },
     { name: "Therapists", path: "/therapists" },
     { name: "Gallery", path: "/gallery" },
-    { name: "Pricing", path: "/pricing" },
+    // { name: "Pricing", path: "/pricing" },
     { name: "Contact", path: "/contact" },
   ];
 
@@ -20,32 +20,33 @@ const Navbar = () => {
   };
 
   return (
-    <header className="sticky top-0 z-50 border-b border-gray-100 bg-white/95 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-[#E8E4DA] bg-[#FAF9F6]/95 shadow-[0_2px_15px_rgba(82,98,77,0.06)] backdrop-blur-md">
       <nav className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Logo */}
         <Link
           to="/"
           onClick={closeMenu}
-          className="flex items-center gap-2"
+          className="flex items-center gap-3"
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50">
+          <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9C7A2] bg-[#F1F3EC] shadow-sm">
             <span className="text-xl">🌿</span>
           </div>
 
           <div className="leading-none">
-            <h1 className="text-xl font-bold tracking-wide text-gray-900">
-              SERENITY
+            <h1 className="text-xl font-bold tracking-[0.12em] text-[#292D2A]">
+              SUMAN
             </h1>
 
-            <p className="mt-1 text-[10px] font-medium tracking-[0.3em] text-emerald-700">
-              SPA & WELLNESS
+            <p className="mt-1 text-[10px] font-medium tracking-[0.3em] text-[#7F9276]">
+              DayNight Spa
             </p>
           </div>
         </Link>
 
         {/* Desktop Navigation */}
         <div className="hidden items-center gap-7 lg:flex">
+
           {navLinks.map((link) => (
             <NavLink
               key={link.name}
@@ -53,8 +54,8 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `relative py-2 text-sm font-medium transition-all duration-300 ${
                   isActive
-                    ? "text-emerald-700"
-                    : "text-gray-600 hover:text-emerald-700"
+                    ? "text-[#52624D]"
+                    : "text-[#626861] hover:text-[#52624D]"
                 }`
               }
             >
@@ -63,7 +64,7 @@ const Navbar = () => {
                   {link.name}
 
                   {isActive && (
-                    <span className="absolute bottom-0 left-0 h-0.5 w-full rounded-full bg-emerald-600" />
+                    <span className="absolute bottom-0 left-0 h-0.5 w-full rounded-full bg-[#B6A477]" />
                   )}
                 </>
               )}
@@ -72,17 +73,17 @@ const Navbar = () => {
 
           {/* Phone */}
           <a
-            href="tel:+919876543210"
-            className="hidden xl:flex items-center gap-2 text-sm font-medium text-gray-700"
+            href="tel:+910000000000"
+            className="hidden items-center gap-2 text-sm font-medium text-[#525852] transition-colors hover:text-[#52624D] xl:flex"
           >
-            <Phone size={16} />
+            <Phone size={16} className="text-[#7F9276]" />
             +91 0000000000
           </a>
 
           {/* Booking Button */}
           <Link
             to="/booking"
-            className="rounded-full bg-emerald-700 px-6 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-emerald-800 hover:shadow-lg"
+            className="rounded-full bg-[#52624D] px-6 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3F4D3B] hover:shadow-lg"
           >
             Book Appointment
           </Link>
@@ -92,7 +93,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="flex h-11 w-11 items-center justify-center rounded-full bg-gray-50 text-gray-800 transition hover:bg-emerald-50 hover:text-emerald-700 lg:hidden"
+          className="flex h-11 w-11 items-center justify-center rounded-full border border-[#E4E0D7] bg-white text-[#3F463F] shadow-sm transition-all hover:border-[#C9D1C3] hover:bg-[#F1F3EC] hover:text-[#52624D] lg:hidden"
           aria-label={isOpen ? "Close menu" : "Open menu"}
           aria-expanded={isOpen}
         >
@@ -102,12 +103,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`overflow-hidden border-t border-gray-100 bg-white transition-all duration-300 lg:hidden ${
+        className={`overflow-hidden border-t border-[#E8E4DA] bg-[#FAF9F6] transition-all duration-300 lg:hidden ${
           isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <div className="flex flex-col">
+
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
@@ -116,8 +118,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `rounded-xl px-4 py-3.5 text-sm font-medium transition ${
                     isActive
-                      ? "bg-emerald-50 text-emerald-700"
-                      : "text-gray-700 hover:bg-gray-50"
+                      ? "bg-[#F1F3EC] text-[#52624D]"
+                      : "text-[#525852] hover:bg-white hover:text-[#52624D]"
                   }`
                 }
               >
@@ -127,19 +129,19 @@ const Navbar = () => {
 
             {/* Mobile Phone */}
             <a
-              href="tel:+919876543210"
+              href="tel:+91000000000"
               onClick={closeMenu}
-              className="mt-2 flex items-center gap-2 rounded-xl px-4 py-3.5 text-sm font-medium text-gray-700 hover:bg-gray-50"
+              className="mt-2 flex items-center gap-2 rounded-xl px-4 py-3.5 text-sm font-medium text-[#525852] transition hover:bg-white hover:text-[#52624D]"
             >
-              <Phone size={17} />
-              +91 98765 43210
+              <Phone size={17} className="text-[#7F9276]" />
+              +91 000000000
             </a>
 
             {/* Mobile Booking */}
             <Link
               to="/booking"
               onClick={closeMenu}
-              className="mt-3 rounded-full bg-emerald-700 px-5 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-emerald-800"
+              className="mt-3 rounded-full bg-[#52624D] px-5 py-3.5 text-center text-sm font-semibold text-white shadow-md transition hover:bg-[#3F4D3B]"
             >
               Book Appointment
             </Link>

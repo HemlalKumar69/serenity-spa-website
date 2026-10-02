@@ -33,7 +33,7 @@ const About = () => {
         <FadeIn>
           <div className="relative mx-auto max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">
-              About Serenity Spa
+              About Suman Day/Night Spa
             </p>
 
             <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
@@ -61,7 +61,7 @@ const About = () => {
               <div className="overflow-hidden rounded-3xl">
                 <img
                   src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=85"
-                  alt="Serenity Spa relaxing environment"
+                  alt="Suman Day/Night Spa relaxing environment"
                   className="h-[420px] w-full object-cover sm:h-[500px]"
                 />
               </div>
@@ -90,7 +90,7 @@ const About = () => {
               </h2>
 
               <p className="mt-5 text-sm leading-7 text-gray-600 sm:text-base">
-                Serenity Spa was created with one simple idea — everyone
+                 Spa was Suman Day/Night created with one simple idea — everyone
                 deserves a place where they can pause, breathe and take care of
                 themselves.
               </p>
@@ -216,7 +216,7 @@ const About = () => {
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
-                Why Guests Choose Serenity
+                Why Guests Choose Suman Day/Night Spa
               </h2>
             </div>
           </FadeIn>

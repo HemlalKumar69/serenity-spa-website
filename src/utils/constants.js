@@ -1,10 +1,10 @@
 export const API_BASE_URL =
   "https://serenity-spa-website.onrender.com";
 
-// Serenity Spa Business Location
+// Suman Day/Night Spa Business Location
 
 export const SPA_LOCATION = {
-  name: "Serenity Spa",
+  name: "Suman Day/Night Spa",
 
   address:
     "Plot No. 373-534, N2 Sector, New Digha, Digha, West Bengal 721428",

@@ -45,7 +45,7 @@ const Gallery = () => {
               </div>
 
               <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-                Serenity Moments
+                Suman Day/NightMoments
               </p>
 
               <h2 className="text-3xl font-bold text-gray-900 sm:text-4xl">
@@ -54,7 +54,7 @@ const Gallery = () => {
               </h2>
 
               <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
-                Every corner of Serenity Spa is designed to create a calm,
+                Every corner of Suman Day/Night Spa is designed to create a calm,
                 comfortable and refreshing experience.
               </p>
             </div>
@@ -88,7 +88,7 @@ const Gallery = () => {
                         </p>
 
                         <p className="mt-1 text-xs text-white/80">
-                          Serenity Spa
+                          Suman Day/Night Spa
                         </p>
                       </div>
 

@@ -106,7 +106,7 @@ const LocationMap = () => {
         {/* Google Maps */}
         <div className="relative w-full h-[400px] sm:h-[450px] rounded-2xl overflow-hidden border border-gray-100 shadow-sm">
           <iframe
-            title="Serenity Spa Location"
+            title="Suman Day/Night Spa Location"
             src={`https://www.google.com/maps?q=${SPA_LOCATION.latitude},${SPA_LOCATION.longitude}&z=16&output=embed`}
             className="w-full h-full border-0"
             loading="lazy"

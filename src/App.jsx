@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Layout from "./components/layout/Layout";
@@ -10,7 +9,7 @@ import ServiceDetails from "./pages/Services/ServiceDetails";
 import Therapists from "./pages/Therapists/Therapists";
 import TherapistDetails from "./pages/Therapists/TherapistDetails";
 import Gallery from "./pages/Gallery/Gallery";
-import Pricing from "./pages/Pricing/Pricing";
+// import Pricing from "./pages/Pricing/Pricing";
 import Booking from "./pages/Booking/Booking";
 import Contact from "./pages/Contact/Contact";
 import NotFound from "./pages/NotFound/NotFound";
@@ -21,42 +20,58 @@ import AdminLogin from "./pages/Admin/AdminLogin";
 import AdminDashboard from "./pages/Admin/AdminDashboard";
 import AdminProtectedRoute from "./components/admin/AdminProtectedRoute";
 
+import FloatingContact from "./components/common/FloatingContact";
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
+
+      {/* Floating Call + WhatsApp */}
+      <FloatingContact />
+
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
+        {/* Admin Login */}
+        <Route path="/admin/login" element={<AdminLogin />} />
 
-          <Route path="about" element={<About />} />
-
-          <Route path="services" element={<Services />} />
-          <Route path="services/:id" element={<ServiceDetails />} />
-
-          <Route path="therapists" element={<Therapists />} />
-          <Route path="therapists/:id" element={<TherapistDetails />} />
-
-          <Route path="gallery" element={<Gallery />} />
-
-          <Route path="pricing" element={<Pricing />} />
-
-          <Route path="booking" element={<Booking />} />
-
-          <Route path="contact" element={<Contact />} />
-
-          <Route path="*" element={<NotFound />} />
-          <Route path="ScrollToTop" element={<ScrollToTop />} />
-
-          <Route path="/admin/login" element={<AdminLogin />} />
-          <Route path="/admin/dashboard" element={<AdminDashboard />} />
-          <Route element={<AdminProtectedRoute />}>
+        {/* Protected Admin Dashboard */}
+        <Route element={<AdminProtectedRoute />}>
           <Route
             path="/admin/dashboard"
             element={<AdminDashboard />}
           />
         </Route>
 
-          
+        {/* Main Website */}
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+
+          <Route path="about" element={<About />} />
+
+          <Route path="services" element={<Services />} />
+
+          <Route
+            path="services/:id"
+            element={<ServiceDetails />}
+          />
+
+          <Route path="therapists" element={<Therapists />} />
+
+          <Route
+            path="therapists/:id"
+            element={<TherapistDetails />}
+          />
+
+          <Route path="gallery" element={<Gallery />} />
+
+          {/* Pricing removed */}
+          {/* <Route path="pricing" element={<Pricing />} /> */}
+
+          <Route path="booking" element={<Booking />} />
+
+          <Route path="contact" element={<Contact />} />
+
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

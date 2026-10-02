@@ -4,6 +4,7 @@ import {
   MapPin,
   Phone,
   ShieldCheck,
+  MessageCircle
 } from "lucide-react";
 
 import BookingForm from "../../components/booking/BookingForm";
@@ -136,7 +137,7 @@ const Booking = () => {
                   <div className="mt-6 space-y-4">
 
                     <a
-                      href="tel:+919876543210"
+                      href="tel:+910000000000"
                       className="flex items-center gap-3 text-sm font-medium text-gray-700 transition hover:text-emerald-700"
                     >
                       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
@@ -153,6 +154,31 @@ const Booking = () => {
 
                       New Digha, Digha, West Bengal 721428
                     </div>
+
+                    {/* Call & WhatsApp Buttons */}
+<div className="mt-8 flex flex-col gap-4 sm:flex-row">
+
+  {/* Call Button */}
+  <a
+    href="tel:+9173208179369"
+    className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-emerald-800"
+  >
+    <Phone size={20} />
+    Call Now
+  </a>
+
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/917320817939?text=Hello%20Suman%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-green-600"
+  >
+    <MessageCircle size={20} />
+    WhatsApp
+  </a>
+
+</div>
 
                   </div>
                 </div>
@@ -177,7 +203,7 @@ const Booking = () => {
 
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base">
               A little time for yourself can make a big difference. Book your
-              relaxing experience at Serenity Spa today.
+              relaxing experience at Suman Day/Night Spa today.
             </p>
           </div>
         </FadeIn>

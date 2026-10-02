@@ -485,7 +485,7 @@ const AdminDashboard = () => {
                                 </span>
 
                                 <h1 className="text-xl sm:text-2xl font-bold">
-                                    Serenity Spa
+                                    Suman Day/Night Spa
                                 </h1>
                             </div>
 

@@ -116,7 +116,7 @@
 //                       </h3>
 
 //                       <p className="mt-1 text-sm leading-6 text-gray-600">
-//                         Serenity Spa
+//                          Suman Day/Night Spa
 //                         <br />
 //                         Main Road, Wellness Avenue
 //                         <br />
@@ -358,7 +358,7 @@
 //               </p>
 
 //               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-//                 Visit Serenity Spa
+//                 Visit Suman Day/Night Spa
 //               </h2>
 //             </div>
 //           </FadeIn>
@@ -371,7 +371,7 @@
 //                 </div>
 
 //                 <h3 className="mt-5 text-2xl font-bold text-gray-900">
-//                   Serenity Spa
+//                   Suman Day/Night Spa
 //                 </h3>
 
 //                 <p className="mt-2 text-sm text-gray-600">
@@ -403,11 +403,12 @@ import { API_BASE_URL } from "../../utils/constants";
 
 import {
   Clock3,
-  Mail,
+  // Mail,
   MapPin,
   MessageSquare,
   Phone,
   Send,
+  MessageCircle,
 } from "lucide-react";
 
 import { useState } from "react";
@@ -556,7 +557,7 @@ const Contact = () => {
                       </h3>
 
                       <p className="mt-1 text-sm leading-6 text-gray-600">
-                        Serenity Spa
+                        Suman Day/Night Spa
                         <br />
                         Plot No. 373-534, N2 Sector
                         <br />
@@ -584,6 +585,31 @@ const Contact = () => {
                       >
                         +91 0000000000
                       </a>
+
+                      {/* Call & WhatsApp Buttons */}
+<div className="mt-8 flex flex-col gap-4 sm:flex-row">
+
+  {/* Call Button */}
+  <a
+    href="tel:+917320817939"
+    className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-emerald-800"
+  >
+    <Phone size={20} />
+    Call Now
+  </a>
+
+  {/* WhatsApp Button */}
+  <a
+    href="https://wa.me/917320817939?text=Hello%20Suman%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    target="_blank"
+    rel="noopener noreferrer"
+    className="inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-green-600"
+  >
+    <MessageCircle size={20} />
+    WhatsApp
+  </a>
+
+</div>
                     </div>
                   </div>
                 </FadeIn>
@@ -626,9 +652,11 @@ const Contact = () => {
                       </p>
                     </div>
                   </div>
-                </FadeIn>
 
-              </div>
+                </FadeIn>                
+
+              </div>                       
+
             </div>
 
             {/* Form */}
@@ -810,7 +838,7 @@ const Contact = () => {
               </p>
 
               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                Visit Serenity Spa
+                Visit Suman Day/Night Spa
               </h2>
             </div>
           </FadeIn>
@@ -823,7 +851,7 @@ const Contact = () => {
                 </div>
 
                 <h3 className="mt-5 text-2xl font-bold text-gray-900">
-                  Serenity Spa
+                  Suman Day/Night Spa
                 </h3>
 
                 <p className="mt-2 text-sm text-gray-600">
@@ -854,7 +882,7 @@ const Contact = () => {
       </p>
 
       <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-        Visit Serenity Spa
+        Visit Suman Day/Night Spa
       </h2>
 
       <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600 sm:text-base">
