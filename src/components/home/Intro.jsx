@@ -5,7 +5,7 @@ import FadeIn from "../common/FadeIn";
 
 const Intro = () => {
   return (
-    <section className="overflow-hidden bg-[#F7F4EC] py-20 sm:py-24 lg:py-28">
+    <section className="overflow-hidden bg-[#EFF2E7] py-20 sm:py-24 lg:py-28">
       <div className="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-2 lg:gap-20 lg:px-8">
 
         {/* Image */}

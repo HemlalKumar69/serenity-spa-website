@@ -4,7 +4,7 @@ import { ArrowRight, Play, Phone, MessageCircle} from "lucide-react";
 const Hero = () => {
   const phoneNumber = "917320817939";
   return (
-    <section className="relative min-h-[calc(100vh-80px)] overflow-hidden">
+    <section className="relative min-h-[calc(100vh-80px)] overflow-hidden bg-[#EFF2E7]">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center"
