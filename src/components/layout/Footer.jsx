@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold">
-            Suman <span className="font-normal">Spa</span>
+            Simran <span className="font-normal">Spa</span>
           </h2>
 
           <p className="mt-4 max-w-sm text-sm leading-6 text-gray-400">
@@ -47,13 +47,13 @@ const Footer = () => {
 
           <div className="mt-4 space-y-3 text-sm text-gray-400">
             <p>721428, Digha kolkata</p>
-            <p>+91 0000000000</p>
+            <p>+91 9341314387</p>
           </div>
         </div>
       </div>
 
       <div className="border-t border-gray-800 px-4 py-5 text-center text-sm text-gray-500">
-        © {new Date().getFullYear()} Suman Day/Night Spa. All rights reserved.
+        © {new Date().getFullYear()} Simran Day/Night Spa. All rights reserved.
       </div>
     </footer>
   );

@@ -67,7 +67,7 @@ const Intro = () => {
               <span className="h-px w-10 bg-[#C6A96B]" />
 
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8D713D] sm:text-sm">
-                Welcome to Suman Day/Night Spa
+                Welcome to Simran Day/Night Spa
               </p>
 
             </div>
@@ -94,7 +94,7 @@ const Intro = () => {
 
             {/* Description */}
             <p className="mt-6 text-base leading-8 text-[#62675E]">
-              At Suman Day/Night Spa, we believe true wellness begins when
+              At Simran Day/Night Spa, we believe true wellness begins when
               you give yourself time to slow down, breathe and reconnect
               with yourself.
             </p>

@@ -26,7 +26,7 @@
 
 //             <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-emerald-100 sm:text-base">
 //               Choose the treatment that suits you best and enjoy a peaceful
-//               wellness experience at Suman Day/Night Spa.
+//               wellness experience at Simran Day/Night Spa.
 //             </p>
 //           </div>
 //         </FadeIn>

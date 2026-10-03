@@ -1,30 +1,45 @@
 import { Star, Quote } from "lucide-react";
 
 import testimonialsData from "../../data/testimonialsData";
+
 import FadeIn from "../common/FadeIn";
 
 const Testimonials = () => {
   return (
-    <section className="bg-stone-50 py-16 sm:py-20 lg:py-24">
+    <section className="bg-[#EFF2E7] py-20 sm:py-24 lg:py-28">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* Heading */}
         <FadeIn>
           <div className="mx-auto mb-12 max-w-2xl text-center">
-            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-              Client Experiences
-            </p>
 
-            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-              What Our{" "}
-              <span className="text-emerald-700">
+            <div className="mb-4 flex items-center justify-center gap-3">
+              <span className="h-px w-10 bg-[#C6A96B]" />
+
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8D713D] sm:text-sm">
+                Client Experiences
+              </p>
+
+              <span className="h-px w-10 bg-[#C6A96B]" />
+            </div>
+
+            <h2 className="text-3xl font-semibold leading-[1.12] tracking-tight text-[#252923] sm:text-4xl lg:text-5xl">
+              What Our
+
+              <span className="mt-2 block font-light italic text-[#3F4A38]">
                 Clients Say
               </span>
             </h2>
 
-            <p className="mt-4 text-sm leading-7 text-gray-600 sm:text-base">
-              Discover why our clients choose Suman Day/Night Spa whenever they need
-              relaxation, care and a little time for themselves.
+            {/* Gold Detail */}
+            <div className="mt-5 flex items-center justify-center gap-2">
+              <span className="h-1 w-10 rounded-full bg-[#C6A96B]" />
+              <span className="h-1 w-2 rounded-full bg-[#C6A96B]/50" />
+            </div>
+
+            <p className="mt-5 text-sm leading-7 text-[#62675E] sm:text-base">
+              Discover why our clients choose Simran Day/Night Spa whenever
+              they need relaxation, care and a little time for themselves.
             </p>
           </div>
         </FadeIn>
@@ -37,10 +52,10 @@ const Testimonials = () => {
               delay={index * 0.15}
               direction="up"
             >
-              <div className="relative h-full rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-lg sm:p-7">
+              <div className="group relative h-full rounded-[1.5rem] border border-white/80 bg-white p-6 shadow-[0_10px_35px_rgba(63,74,56,0.07)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(63,74,56,0.14)] sm:p-7">
 
                 {/* Quote Icon */}
-                <div className="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
+                <div className="absolute right-6 top-6 flex h-11 w-11 items-center justify-center rounded-full border border-[#D9C7A2]/50 bg-[#F1EEE3] text-[#8D713D] transition-all duration-300 group-hover:bg-[#3F4A38] group-hover:text-[#FFFDF8]">
                   <Quote size={19} />
                 </div>
 
@@ -52,34 +67,47 @@ const Testimonials = () => {
                     <Star
                       key={index}
                       size={17}
-                      className="fill-amber-400 text-amber-400"
+                      className="fill-[#C6A96B] text-[#C6A96B]"
                     />
                   ))}
                 </div>
 
                 {/* Review */}
-                <p className="text-sm leading-7 text-gray-600 sm:text-base">
+                <p className="pr-10 text-sm leading-7 text-[#62675E] sm:text-base">
                   “{testimonial.review}”
                 </p>
 
                 {/* Client */}
-                <div className="mt-7 flex items-center gap-4 border-t border-gray-100 pt-5">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="h-12 w-12 rounded-full object-cover"
-                  />
+                <div className="mt-7 flex items-center gap-4 border-t border-[#E6E4DC] pt-5">
+
+                  <div className="relative">
+                    <img
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="h-12 w-12 rounded-full border-2 border-[#D9C7A2]/60 object-cover"
+                    />
+
+                    <span className="absolute -bottom-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full border-2 border-white bg-[#3F4A38]">
+                      <Star
+                        size={10}
+                        className="fill-[#C6A96B] text-[#C6A96B]"
+                      />
+                    </span>
+                  </div>
 
                   <div>
-                    <h3 className="text-sm font-bold text-gray-900">
+                    <h3 className="text-sm font-semibold text-[#252923]">
                       {testimonial.name}
                     </h3>
 
-                    <p className="mt-1 text-xs text-gray-500">
+                    <p className="mt-1 text-xs text-[#777B73]">
                       {testimonial.role}
                     </p>
                   </div>
                 </div>
+
+                {/* Bottom Accent */}
+                <div className="absolute bottom-0 left-7 h-0.5 w-8 rounded-full bg-[#C6A96B] transition-all duration-300 group-hover:w-14" />
 
               </div>
             </FadeIn>
@@ -89,22 +117,23 @@ const Testimonials = () => {
         {/* Bottom Rating */}
         <FadeIn delay={0.25}>
           <div className="mt-10 flex flex-col items-center justify-center gap-2 sm:flex-row">
+
             <div className="flex items-center gap-1">
               <Star
-                className="fill-amber-400 text-amber-400"
+                className="fill-[#C6A96B] text-[#C6A96B]"
                 size={18}
               />
 
-              <span className="font-bold text-gray-900">
+              <span className="font-semibold text-[#252923]">
                 5/5
               </span>
             </div>
 
-            <span className="hidden text-gray-300 sm:block">
+            <span className="hidden text-[#B7B9B0] sm:block">
               •
             </span>
 
-            <p className="text-sm text-gray-500">
+            <p className="text-sm text-[#62675E]">
               Loved by 5,000+ happy clients
             </p>
           </div>

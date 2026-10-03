@@ -88,7 +88,7 @@ const navigate = useNavigate();
           </div>
 
           <h1 className="text-3xl font-bold text-emerald-900">
-            Suman Day/Night Spa
+            Simran Day/Night Spa
           </h1>
 
           <p className="text-gray-500 mt-2">
@@ -109,7 +109,7 @@ const navigate = useNavigate();
               </h2>
 
               <p className="text-sm text-gray-500">
-                Login to manage Suman Day/Night Spa
+                Login to manage Simran Day/Night Spa
               </p>
             </div>
           </div>
@@ -182,7 +182,7 @@ const navigate = useNavigate();
         </div>
 
         <p className="text-center text-xs text-gray-400 mt-6">
-          © {new Date().getFullYear()} Suman Day/Night Spa
+          © {new Date().getFullYear()} Simran Day/Night Spa
         </p>
       </div>
     </div>

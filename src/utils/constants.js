@@ -1,10 +1,10 @@
 export const API_BASE_URL =
   "https://serenity-spa-website.onrender.com";
 
-// Suman Day/Night Spa Business Location
+// Simran Day/Night Spa Business Location
 
 export const SPA_LOCATION = {
-  name: "Suman Day/Night Spa",
+  name: "Simran Day/Night Spa",
 
   address:
     "Plot No. 373-534, N2 Sector, New Digha, Digha, West Bengal 721428",
@@ -13,7 +13,7 @@ export const SPA_LOCATION = {
 
   longitude: 87.5021155,
 
-  phone: "+91 98765 43210",
+  phone: "+91 9341314387",
 
   googleMapsUrl:
     "https://maps.app.goo.gl/kJkAqDyxiSV2Tcty5",

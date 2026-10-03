@@ -35,7 +35,7 @@ const Navbar = () => {
 
           <div className="leading-none">
             <h1 className="text-xl font-bold tracking-[0.12em] text-[#292D2A]">
-              SUMAN
+              SIMRAN
             </h1>
 
             <p className="mt-1 text-[10px] font-medium tracking-[0.3em] text-[#7F9276]">
@@ -73,11 +73,11 @@ const Navbar = () => {
 
           {/* Phone */}
           <a
-            href="tel:+910000000000"
+            href="tel:+919341314387"
             className="hidden items-center gap-2 text-sm font-medium text-[#525852] transition-colors hover:text-[#52624D] xl:flex"
           >
             <Phone size={16} className="text-[#7F9276]" />
-            +91 0000000000
+            +91 9341314387
           </a>
 
           {/* Booking Button */}
@@ -129,12 +129,12 @@ const Navbar = () => {
 
             {/* Mobile Phone */}
             <a
-              href="tel:+91000000000"
+              href="tel:+919341314387"
               onClick={closeMenu}
               className="mt-2 flex items-center gap-2 rounded-xl px-4 py-3.5 text-sm font-medium text-[#525852] transition hover:bg-white hover:text-[#52624D]"
             >
               <Phone size={17} className="text-[#7F9276]" />
-              +91 000000000
+              +91 9341314387
             </a>
 
             {/* Mobile Booking */}

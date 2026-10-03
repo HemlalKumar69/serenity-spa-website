@@ -137,14 +137,14 @@ const Booking = () => {
                   <div className="mt-6 space-y-4">
 
                     <a
-                      href="tel:+910000000000"
+                      href="tel:+919341314387"
                       className="flex items-center gap-3 text-sm font-medium text-gray-700 transition hover:text-emerald-700"
                     >
                       <span className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
                         <Phone size={18} />
                       </span>
 
-                      +91 0000000000
+                      +91 9341314387
                     </a>
 
                     <div className="flex items-center gap-3 text-sm font-medium text-gray-700">
@@ -160,7 +160,7 @@ const Booking = () => {
 
   {/* Call Button */}
   <a
-    href="tel:+9173208179369"
+    href="tel:+919341314387"
     className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-emerald-800"
   >
     <Phone size={20} />
@@ -169,7 +169,7 @@ const Booking = () => {
 
   {/* WhatsApp Button */}
   <a
-    href="https://wa.me/917320817939?text=Hello%20Suman%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    href="https://wa.me/919341314387?text=Hello%20Simran%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-green-600"
@@ -203,7 +203,7 @@ const Booking = () => {
 
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-gray-600 sm:text-base">
               A little time for yourself can make a big difference. Book your
-              relaxing experience at Suman Day/Night Spa today.
+              relaxing experience at Simran Day/Night Spa today.
             </p>
           </div>
         </FadeIn>

@@ -116,7 +116,7 @@
 //                       </h3>
 
 //                       <p className="mt-1 text-sm leading-6 text-gray-600">
-//                          Suman Day/Night Spa
+//                          Simran Day/Night Spa
 //                         <br />
 //                         Main Road, Wellness Avenue
 //                         <br />
@@ -139,10 +139,10 @@
 //                       </h3>
 
 //                       <a
-//                         href="tel:+919876543210"
+//                         href="tel:+919341314387"
 //                         className="mt-1 block text-sm text-gray-600 transition hover:text-emerald-700"
 //                       >
-//                         +91 0000000000
+//                         +91 9341314387
 //                       </a>
 //                     </div>
 //                   </div>
@@ -358,7 +358,7 @@
 //               </p>
 
 //               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-//                 Visit Suman Day/Night Spa
+//                 Visit Simran Day/Night Spa
 //               </h2>
 //             </div>
 //           </FadeIn>
@@ -371,7 +371,7 @@
 //                 </div>
 
 //                 <h3 className="mt-5 text-2xl font-bold text-gray-900">
-//                   Suman Day/Night Spa
+//                   Simran Day/Night Spa
 //                 </h3>
 
 //                 <p className="mt-2 text-sm text-gray-600">
@@ -557,7 +557,7 @@ const Contact = () => {
                       </h3>
 
                       <p className="mt-1 text-sm leading-6 text-gray-600">
-                        Suman Day/Night Spa
+                        Simran Day/Night Spa
                         <br />
                         Plot No. 373-534, N2 Sector
                         <br />
@@ -580,10 +580,10 @@ const Contact = () => {
                       </h3>
 
                       <a
-                        href="tel:+910000000000"
+                        href="tel:+919341314387"
                         className="mt-1 block text-sm text-gray-600 transition hover:text-emerald-700"
                       >
-                        +91 0000000000
+                        +91 9341314387
                       </a>
 
                       {/* Call & WhatsApp Buttons */}
@@ -591,7 +591,7 @@ const Contact = () => {
 
   {/* Call Button */}
   <a
-    href="tel:+917320817939"
+    href="tel:+919341314387"
     className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-emerald-800"
   >
     <Phone size={20} />
@@ -600,7 +600,7 @@ const Contact = () => {
 
   {/* WhatsApp Button */}
   <a
-    href="https://wa.me/917320817939?text=Hello%20Suman%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+    href="https://wa.me/919341314387?text=Hello%20Simran%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
     target="_blank"
     rel="noopener noreferrer"
     className="inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-green-600"
@@ -838,7 +838,7 @@ const Contact = () => {
               </p>
 
               <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                Visit Suman Day/Night Spa
+                Visit Simran Day/Night Spa
               </h2>
             </div>
           </FadeIn>
@@ -851,7 +851,7 @@ const Contact = () => {
                 </div>
 
                 <h3 className="mt-5 text-2xl font-bold text-gray-900">
-                  Suman Day/Night Spa
+                  Simran Day/Night Spa
                 </h3>
 
                 <p className="mt-2 text-sm text-gray-600">
@@ -882,7 +882,7 @@ const Contact = () => {
       </p>
 
       <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-        Visit Suman Day/Night Spa
+        Visit Simran Day/Night Spa
       </h2>
 
       <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600 sm:text-base">

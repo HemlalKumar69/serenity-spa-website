@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowRight, Play, Phone, MessageCircle} from "lucide-react";
 
 const Hero = () => {
-  const phoneNumber = "917320817939";
+  const phoneNumber = "919341314387";
   return (
     <section className="relative min-h-[calc(100vh-80px)] overflow-hidden bg-[#EFF2E7]">
       {/* Background Image */}
@@ -81,7 +81,7 @@ const Hero = () => {
 
             {/* WhatsApp */}
             <a
-              href={`https://wa.me/${phoneNumber}?text=Hello%20Suman%20Day%20%26%20Night,%20I%20would%20like%20to%20know%20more%20about%20your%20services.`}
+              href={`https://wa.me/${phoneNumber}?text=Hello%20Simran%20Day%20%26%20Night,%20I%20would%20like%20to%20know%20more%20about%20your%20services.`}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-[#C9D1C3] bg-[#F1F3EC]/90 px-6 py-3 text-sm font-semibold text-[#52624D] shadow-sm backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-[#E5EBDD] hover:shadow-md"
