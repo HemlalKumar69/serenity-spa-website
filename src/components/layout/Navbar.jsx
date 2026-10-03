@@ -29,8 +29,17 @@ const Navbar = () => {
           onClick={closeMenu}
           className="flex items-center gap-3"
         >
-          <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9C7A2] bg-[#F1F3EC] shadow-sm">
+          {/* <div className="flex h-11 w-11 items-center justify-center rounded-full border border-[#D9C7A2] bg-[#F1F3EC] shadow-sm">
             <span className="text-xl">🌿</span>
+          </div> */}
+
+
+          <div className="flex h-11 w-11 items-center justify-center overflow-hidden rounded-full border border-[#D9C7A2] bg-[#F1F3EC] shadow-sm">
+            <img
+              src="/logo.jpg"
+              alt="Girl"
+              className="h-full w-full object-cover"
+            />
           </div>
 
           <div className="leading-none">
@@ -52,10 +61,9 @@ const Navbar = () => {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `relative py-2 text-sm font-medium transition-all duration-300 ${
-                  isActive
-                    ? "text-[#52624D]"
-                    : "text-[#626861] hover:text-[#52624D]"
+                `relative py-2 text-sm font-medium transition-all duration-300 ${isActive
+                  ? "text-[#52624D]"
+                  : "text-[#626861] hover:text-[#52624D]"
                 }`
               }
             >
@@ -103,9 +111,8 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`overflow-hidden border-t border-[#E8E4DA] bg-[#FAF9F6] transition-all duration-300 lg:hidden ${
-          isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
-        }`}
+        className={`overflow-hidden border-t border-[#E8E4DA] bg-[#FAF9F6] transition-all duration-300 lg:hidden ${isOpen ? "max-h-[600px] opacity-100" : "max-h-0 opacity-0"
+          }`}
       >
         <div className="mx-auto max-w-7xl px-4 py-4 sm:px-6">
           <div className="flex flex-col">
@@ -116,10 +123,9 @@ const Navbar = () => {
                 to={link.path}
                 onClick={closeMenu}
                 className={({ isActive }) =>
-                  `rounded-xl px-4 py-3.5 text-sm font-medium transition ${
-                    isActive
-                      ? "bg-[#F1F3EC] text-[#52624D]"
-                      : "text-[#525852] hover:bg-white hover:text-[#52624D]"
+                  `rounded-xl px-4 py-3.5 text-sm font-medium transition ${isActive
+                    ? "bg-[#F1F3EC] text-[#52624D]"
+                    : "text-[#525852] hover:bg-white hover:text-[#52624D]"
                   }`
                 }
               >
