@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Brand */}
         <div>
           <h2 className="text-2xl font-bold">
-            Simran <span className="font-normal">Spa</span>
+            ꜱɪᴍʀᴀɴ <span className="font-normal"> ꜱᴘᴀ</span>
           </h2>
 
           <p className="mt-4 max-w-sm text-sm leading-6 text-gray-400">

@@ -1,11 +1,11 @@
 const therapistsData = [
   {
     id: 1,
-    name: "Dr. Ananya Sharma",
+    name: "Ananya Sharma",
     specialization: "Wellness & Relaxation Therapist",
     experience: "8+ Years Experience",
     image:
-      "https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=700&q=85",
+      "https://www.ayainternationalspa.com/assets/elegant_north_indian_female_spa_therapist_portrait.png",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const therapistsData = [
     specialization: "Massage & Aromatherapy Expert",
     experience: "6+ Years Experience",
     image:
-      "https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&w=700&q=85",
+      "https://chamelispaajman.com/images/staff/chamelispa-ajman.webp",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const therapistsData = [
     specialization: "Body Spa & Skin Care Expert",
     experience: "5+ Years Experience",
     image:
-      "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=700&q=85",
+      "https://assets.zyrosite.com/cdn-cgi/image/format%3Dauto%2Cw%3D768%2Ch%3D512%2Cfit%3Dcrop/bJf1GL6Hr6q8vUCi/delhi-massage-centre-new-ashok-nagar-KYcWfNiJPL61tER1.png",
   },
 ];
 

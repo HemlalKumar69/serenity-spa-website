@@ -1,7 +1,21 @@
+
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- =========================
+         BASIC HTML
+    ========================== -->
+
     <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <!-- =========================
+         FAVICON
+    ========================== -->
 
     <link
       rel="icon"
@@ -9,45 +23,43 @@
       href="/favicon.svg"
     />
 
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <!-- =========================
+         PRIMARY SEO
+    ========================== -->
 
-    <!-- SEO Title -->
     <title>
       Simran Day/Night Spa & Massage Center in Digha, West Bengal
     </title>
 
-    <!-- SEO Description -->
     <meta
       name="description"
-      content="Simran Day/Night Spa is a massage and wellness center in New Digha, West Bengal, offering Swedish massage, deep tissue massage, aromatherapy, hot stone therapy, facial and body spa treatments."
+      content="Simran Day/Night Spa in New Digha, West Bengal offers Swedish massage, deep tissue massage, aromatherapy, hot stone therapy, body spa and facial treatments."
     />
 
-    <!-- SEO Keywords -->
-    <meta
-      name="keywords"
-      content="spa in Digha, massage center in Digha, spa and massage center Digha, massage therapy Digha, spa in New Digha, massage center New Digha, wellness spa Digha"
-    />
-
-    <!-- Search Engine Instructions -->
     <meta
       name="robots"
-      content="index, follow"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
     />
 
-    <!-- Location -->
-    <meta
-      name="geo.region"
-      content="IN-WB"
-    />
-    <meta
-      name="geo.placename"
-      content="Digha, West Bengal, India"
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://serenityspa.onrender.com/"
     />
 
-    <!-- Open Graph -->
+    <!-- =========================
+         LANGUAGE / REGION
+    ========================== -->
+
+    <meta
+      http-equiv="content-language"
+      content="en-IN"
+    />
+
+    <!-- =========================
+         OPEN GRAPH
+    ========================== -->
+
     <meta
       property="og:title"
       content="Simran Day/Night Spa & Massage Center in Digha"
@@ -55,7 +67,7 @@
 
     <meta
       property="og:description"
-      content="Relax, rejuvenate and reconnect at Simran Day/Night Spa in New Digha, West Bengal."
+      content="Relax, rejuvenate and reconnect at Simran Day/Night Spa in New Digha, West Bengal. Explore massage, spa and wellness treatments."
     />
 
     <meta
@@ -64,36 +76,165 @@
     />
 
     <meta
+      property="og:url"
+      content="https://serenityspa.onrender.com/"
+    />
+
+    <meta
+      property="og:site_name"
+      content="Simran Day/Night Spa"
+    />
+
+    <meta
       property="og:locale"
       content="en_IN"
     />
 
-    <!-- Local Business Schema -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "DaySpa",
-  "name": "Simran Day/Night Spa",
-  "description": "Simran Day/Night Spa is a massage and wellness center in New Digha, West Bengal.",
-  "url": "https://YOUR-DOMAIN.com",
-  "telephone": "+91 9341314387",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Plot No. 373-534, N2 Sector",
-    "addressLocality": "New Digha",
-    "addressRegion": "West Bengal",
-    "postalCode": "721428",
-    "addressCountry": "IN"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 21.6243734,
-    "longitude": 87.5021155
-  },
-  "openingHours": "Mo-Su 09:00-20:00"
-}
-</script>
+    <!--
+      Add a real social preview image later.
+      Example:
+      <meta
+        property="og:image"
+        content="https://serenityspa.onrender.com/og-image.jpg"
+      />
+    -->
 
+    <!-- =========================
+         TWITTER / X CARD
+    ========================== -->
+
+    <meta
+      name="twitter:card"
+      content="summary_large_image"
+    />
+
+    <meta
+      name="twitter:title"
+      content="Simran Day/Night Spa & Massage Center in Digha"
+    />
+
+    <meta
+      name="twitter:description"
+      content="Massage, spa and wellness treatments in New Digha, Digha, West Bengal."
+    />
+
+    <!-- =========================
+         LOCAL BUSINESS SEO
+    ========================== -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "DaySpa",
+        "@id": "https://serenityspa.onrender.com/#business",
+
+        "name": "Simran Day/Night Spa",
+
+        "description": "Simran Day/Night Spa is a spa and massage center in New Digha, West Bengal offering massage, body spa, aromatherapy, hot stone therapy and facial treatments.",
+
+        "url": "https://serenityspa.onrender.com/",
+
+        "telephone": "+91 9341314387",
+
+        "priceRange": "₹₹",
+
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Plot No. 373-534, N2 Sector",
+          "addressLocality": "New Digha",
+          "addressRegion": "West Bengal",
+          "postalCode": "721428",
+          "addressCountry": "IN"
+        },
+
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 21.6243734,
+          "longitude": 87.5021155
+        },
+
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday",
+              "Sunday"
+            ],
+            "opens": "09:00",
+            "closes": "20:00"
+          }
+        ],
+
+        "areaServed": [
+          {
+            "@type": "City",
+            "name": "Digha"
+          },
+          {
+            "@type": "Place",
+            "name": "New Digha"
+          },
+          {
+            "@type": "AdministrativeArea",
+            "name": "West Bengal"
+          }
+        ],
+
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Spa & Massage Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Swedish Massage"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Deep Tissue Massage"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Aromatherapy"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Hot Stone Therapy"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Luxury Body Spa"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Facial Treatment"
+              }
+            }
+          ]
+        }
+      }
+    </script>
   </head>
 
   <body>
@@ -105,3 +246,4 @@
     ></script>
   </body>
 </html>
+```

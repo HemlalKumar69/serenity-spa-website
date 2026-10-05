@@ -10,56 +10,59 @@ import FadeIn from "../common/FadeIn";
 const features = [
   {
     icon: HeartHandshake,
-    title: "Personalized Care",
+    title: "Personalized Spa Care",
     description:
-      "Every treatment is tailored to your comfort, wellness needs and relaxation goals.",
+      "Every treatment is tailored to your comfort, wellness needs and relaxation goals at our spa in Digha.",
   },
   {
     icon: Sparkles,
-    title: "Expert Therapists",
+    title: "Professional Therapists",
     description:
-      "Our trained therapists focus on providing a calm, professional and relaxing experience.",
+      "Our trained therapists focus on providing a calm, professional and relaxing massage experience in New Digha.",
   },
   {
     icon: Leaf,
-    title: "Premium Products",
+    title: "Quality Spa Products",
     description:
-      "We use carefully selected products and natural ingredients for a luxurious experience.",
+      "We use carefully selected products and natural ingredients to create a comfortable and refreshing wellness experience.",
   },
   {
     icon: ShieldCheck,
-    title: "Clean & Safe",
+    title: "Clean & Comfortable",
     description:
-      "Your comfort, hygiene and safety are always among our highest priorities.",
+      "Your comfort, hygiene and safety are always among our highest priorities during every spa and massage treatment.",
   },
 ];
 
 const WhyChooseUs = () => {
   return (
-    <section className="bg-[#EFF2E7] py-20 sm:py-24 lg:py-28">
+    <section
+      className="bg-[#EFF2E7] py-20 sm:py-24 lg:py-28"
+      aria-labelledby="why-choose-us-heading"
+    >
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         {/* Heading */}
         <FadeIn>
           <div className="mx-auto max-w-2xl text-center">
-
             {/* Label */}
             <div className="mb-4 flex items-center justify-center gap-3">
               <span className="h-px w-10 bg-[#C6A96B]" />
 
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#8D713D] sm:text-sm">
-                Why Choose Us
+                Why Choose Simran Spa
               </p>
 
               <span className="h-px w-10 bg-[#C6A96B]" />
             </div>
 
             {/* Heading */}
-            <h2 className="mt-3 text-3xl font-semibold leading-[1.12] tracking-tight text-[#252923] sm:text-4xl lg:text-5xl">
-              Your wellness is our
-
+            <h2
+              id="why-choose-us-heading"
+              className="mt-3 text-3xl font-semibold leading-[1.12] tracking-tight text-[#252923] sm:text-4xl lg:text-5xl"
+            >
+              A better spa experience in
               <span className="mt-2 block font-light italic text-[#3F4A38]">
-                priority
+                Digha, West Bengal
               </span>
             </h2>
 
@@ -71,16 +74,15 @@ const WhyChooseUs = () => {
 
             {/* Description */}
             <p className="mt-5 text-base leading-7 text-[#62675E]">
-              From the moment you walk in, every detail is designed to
-              make you feel comfortable, relaxed and cared for.
+              At Simran Day/Night Spa in New Digha, every detail is designed
+              to help you feel comfortable, relaxed and cared for during your
+              spa and massage experience.
             </p>
-
           </div>
         </FadeIn>
 
         {/* Features */}
         <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-
           {features.map((feature, index) => {
             const Icon = feature.icon;
 
@@ -90,17 +92,15 @@ const WhyChooseUs = () => {
                 delay={index * 0.12}
                 direction="up"
               >
-                <div className="group h-full rounded-[1.5rem] border border-white/80 bg-white p-7 text-center shadow-[0_8px_30px_rgba(63,74,56,0.06)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(63,74,56,0.13)]">
-
+                <article className="group h-full rounded-[1.5rem] border border-white/80 bg-white p-7 text-center shadow-[0_8px_30px_rgba(63,74,56,0.06)] transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_20px_45px_rgba(63,74,56,0.13)]">
                   {/* Icon */}
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl border border-[#D9C7A2]/50 bg-[#F1EEE3] transition-all duration-300 group-hover:border-[#3F4A38] group-hover:bg-[#3F4A38]">
-
                     <Icon
                       size={28}
                       strokeWidth={1.7}
+                      aria-hidden="true"
                       className="text-[#8D713D] transition-colors duration-300 group-hover:text-[#FFFDF8]"
                     />
-
                   </div>
 
                   {/* Title */}
@@ -115,12 +115,10 @@ const WhyChooseUs = () => {
 
                   {/* Bottom Gold Accent */}
                   <div className="mx-auto mt-6 h-0.5 w-8 rounded-full bg-[#C6A96B] transition-all duration-300 group-hover:w-14" />
-
-                </div>
+                </article>
               </FadeIn>
             );
           })}
-
         </div>
       </div>
     </section>

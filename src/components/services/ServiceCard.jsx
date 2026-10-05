@@ -1,17 +1,18 @@
+
 import { Link } from "react-router-dom";
 import { ArrowUpRight, Clock } from "lucide-react";
 
 const ServiceCard = ({ service }) => {
   return (
-    <div className="group h-full overflow-hidden rounded-[1.5rem] bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_22px_50px_rgba(63,74,56,0.16)]">
-
+    <article className="group h-full overflow-hidden rounded-[1.5rem] bg-white transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_22px_50px_rgba(63,74,56,0.16)]">
       {/* Image */}
       <div className="relative h-64 overflow-hidden">
-
         <img
           src={service.image}
-          alt={service.title}
+          alt={`${service.title} spa and massage treatment at Simran Day/Night Spa in Digha`}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+          loading="lazy"
+          decoding="async"
         />
 
         {/* Premium Image Overlay */}
@@ -27,12 +28,10 @@ const ServiceCard = ({ service }) => {
           <Clock size={15} className="text-[#D9C78F]" />
           {service.duration}
         </div>
-
       </div>
 
       {/* Content */}
       <div className="flex min-h-[215px] flex-col p-6">
-
         {/* Small Gold Accent */}
         <div className="mb-3 flex items-center gap-2">
           <span className="h-px w-7 bg-[#C6A96B]" />
@@ -52,19 +51,19 @@ const ServiceCard = ({ service }) => {
         {/* Explore Link */}
         <Link
           to={`/services/${service.id}`}
-          className="group/link mt-auto pt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#7C6436] transition-colors duration-300 hover:text-[#3F4A38]"
+          aria-label={`Explore ${service.title} treatment at Simran Day/Night Spa in Digha`}
+          className="group/link mt-auto inline-flex items-center gap-2 pt-5 text-sm font-semibold text-[#7C6436] transition-colors duration-300 hover:text-[#3F4A38]"
         >
           Explore Treatment
-
           <ArrowUpRight
             size={17}
             className="transition-transform duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1"
           />
         </Link>
-
       </div>
-    </div>
+    </article>
   );
 };
 
 export default ServiceCard;
+

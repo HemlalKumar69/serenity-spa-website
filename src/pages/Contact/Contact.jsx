@@ -399,16 +399,17 @@
 // export default Contact;
 
 
+
 import { API_BASE_URL } from "../../utils/constants";
 
 import {
+  ArrowUpRight,
   Clock3,
-  // Mail,
   MapPin,
+  MessageCircle,
   MessageSquare,
   Phone,
   Send,
-  MessageCircle,
 } from "lucide-react";
 
 import { useState } from "react";
@@ -495,22 +496,37 @@ const Contact = () => {
 
   return (
     <>
-      {/* Hero */}
-      <section className="bg-emerald-900 py-20 sm:py-24">
-        <FadeIn>
-          <div className="mx-auto max-w-4xl px-4 text-center sm:px-6">
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-emerald-200">
-              Get In Touch
-            </p>
+      {/* ==================== HERO ==================== */}
+      <section className="relative overflow-hidden bg-[#3F4A38] py-20 sm:py-24 lg:py-28">
+        <div className="absolute -left-24 -top-24 h-72 w-72 rounded-full bg-[#C6A96B]/15 blur-3xl" />
 
-            <h1 className="text-4xl font-bold text-white sm:text-5xl lg:text-6xl">
+        <div className="absolute -bottom-24 -right-24 h-80 w-80 rounded-full bg-[#D9C7A2]/10 blur-3xl" />
+
+        <FadeIn>
+          <div className="relative mx-auto max-w-4xl px-4 text-center sm:px-6">
+            <div className="mb-5 flex items-center justify-center gap-3">
+              <span className="h-px w-10 bg-[#C6A96B]" />
+
+              <p className="text-xs font-semibold uppercase tracking-[0.22em] text-[#D9C7A2] sm:text-sm">
+                Get In Touch
+              </p>
+
+              <span className="h-px w-10 bg-[#C6A96B]" />
+            </div>
+
+            <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight text-[#FFFDF8] sm:text-5xl lg:text-6xl">
               We'd Love to
-              <span className="block text-emerald-200">
+              <span className="mt-2 block font-light italic text-[#D9C7A2]">
                 Hear From You.
               </span>
             </h1>
 
-            <p className="mx-auto mt-5 max-w-2xl text-sm leading-7 text-emerald-100 sm:text-base">
+            <div className="mt-6 flex items-center justify-center gap-2">
+              <span className="h-1 w-10 rounded-full bg-[#C6A96B]" />
+              <span className="h-1 w-2 rounded-full bg-[#C6A96B]/60" />
+            </div>
+
+            <p className="mx-auto mt-6 max-w-2xl text-sm leading-7 text-[#E5E9DE] sm:text-base">
               Have a question about our treatments or need help choosing the
               right experience? Get in touch with our team.
             </p>
@@ -518,24 +534,35 @@ const Contact = () => {
         </FadeIn>
       </section>
 
-      {/* Contact */}
-      <section className="bg-stone-50 py-16 sm:py-20 lg:py-24">
+      {/* ==================== CONTACT SECTION ==================== */}
+      <section className="bg-[#EFF2E7] py-16 sm:py-20 lg:py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="grid gap-10 lg:grid-cols-[380px_1fr] lg:gap-14">
-
-            {/* Contact Info */}
+            {/* ==================== CONTACT INFORMATION ==================== */}
             <div>
               <FadeIn direction="right">
                 <div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-                    Contact Information
-                  </p>
+                  <div className="mb-4 flex items-center gap-3">
+                    <span className="h-px w-10 bg-[#C6A96B]" />
 
-                  <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                    Let's Start a Conversation
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8D713D]">
+                      Contact Information
+                    </p>
+                  </div>
+
+                  <h2 className="text-3xl font-semibold leading-[1.12] text-[#252923] sm:text-4xl">
+                    Let's Start a
+                    <span className="mt-2 block font-light italic text-[#3F4A38]">
+                      Conversation
+                    </span>
                   </h2>
 
-                  <p className="mt-5 text-sm leading-7 text-gray-600 sm:text-base">
+                  <div className="mt-5 flex items-center gap-2">
+                    <span className="h-1 w-10 rounded-full bg-[#C6A96B]" />
+                    <span className="h-1 w-2 rounded-full bg-[#C6A96B]/50" />
+                  </div>
+
+                  <p className="mt-5 text-sm leading-7 text-[#62675E] sm:text-base">
                     Our friendly team is available to answer your questions,
                     discuss treatments and help you plan your wellness visit.
                   </p>
@@ -543,20 +570,19 @@ const Contact = () => {
               </FadeIn>
 
               <div className="mt-8 space-y-5">
-
-                {/* Address */}
+                {/* ==================== ADDRESS ==================== */}
                 <FadeIn direction="right" delay={0.1}>
-                  <div className="flex gap-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
+                  <div className="group flex gap-4 rounded-[1.25rem] border border-white/80 bg-white p-5 shadow-[0_10px_30px_rgba(63,74,56,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(63,74,56,0.11)]">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#D9C7A2]/50 bg-[#F1EEE3] text-[#8D713D] transition duration-300 group-hover:bg-[#3F4A38] group-hover:text-white">
                       <MapPin size={20} />
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-gray-900">
+                      <h3 className="font-semibold text-[#252923]">
                         Visit Us
                       </h3>
 
-                      <p className="mt-1 text-sm leading-6 text-gray-600">
+                      <p className="mt-1 text-sm leading-6 text-[#62675E]">
                         Simran Day/Night Spa
                         <br />
                         Plot No. 373-534, N2 Sector
@@ -567,114 +593,108 @@ const Contact = () => {
                   </div>
                 </FadeIn>
 
-                {/* Phone */}
+                {/* ==================== PHONE ==================== */}
                 <FadeIn direction="right" delay={0.2}>
-                  <div className="flex gap-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
-                      <Phone size={20} />
+                  <div className="rounded-[1.25rem] border border-white/80 bg-white p-5 shadow-[0_10px_30px_rgba(63,74,56,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(63,74,56,0.11)]">
+                    <div className="flex gap-4">
+                      <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#D9C7A2]/50 bg-[#F1EEE3] text-[#8D713D]">
+                        <Phone size={20} />
+                      </div>
+
+                      <div>
+                        <h3 className="font-semibold text-[#252923]">
+                          Call Us
+                        </h3>
+
+                        <a
+                          href="tel:+919341314387"
+                          className="mt-1 block text-sm text-[#62675E] transition hover:text-[#3F4A38]"
+                        >
+                          +91 9341314387
+                        </a>
+                      </div>
                     </div>
 
-                    <div>
-                      <h3 className="font-bold text-gray-900">
-                        Call Us
-                      </h3>
-
+                    {/* Call & WhatsApp */}
+                    <div className="mt-6 grid gap-3 sm:grid-cols-2">
+                      {/* Call */}
                       <a
                         href="tel:+919341314387"
-                        className="mt-1 block text-sm text-gray-600 transition hover:text-emerald-700"
+                        className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#3F4A38] px-5 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#30382B] hover:shadow-lg"
                       >
-                        +91 9341314387
+                        <Phone size={18} />
+
+                        Call Now
+
+                        <ArrowUpRight
+                          size={16}
+                          className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                        />
                       </a>
 
-                      {/* Call & WhatsApp Buttons */}
-<div className="mt-8 flex flex-col gap-4 sm:flex-row">
-
-  {/* Call Button */}
-  <a
-    href="tel:+919341314387"
-    className="inline-flex items-center justify-center gap-2 rounded-full bg-emerald-700 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-emerald-800"
-  >
-    <Phone size={20} />
-    Call Now
-  </a>
-
-  {/* WhatsApp Button */}
-  <a
-    href="https://wa.me/919341314387?text=Hello%20Simran%20Day/Night%20Spa,%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-    target="_blank"
-    rel="noopener noreferrer"
-    className="inline-flex items-center justify-center gap-2 rounded-full bg-green-500 px-7 py-3.5 font-medium text-white shadow-md transition-all duration-300 hover:scale-105 hover:bg-green-600"
-  >
-    <MessageCircle size={20} />
-    WhatsApp
-  </a>
-
-</div>
-                    </div>
-                  </div>
-                </FadeIn>
-
-                {/* Email */}
-                <FadeIn direction="right" delay={0.3}>
-                  <div className="">
-                    
-
-                    <div>
-                      {/* <h3 className="font-bold text-gray-900">
-                        Email Us
-                      </h3> */}
-
+                      {/* WhatsApp */}
                       <a
-                        href=""
-                        className="mt-1 block break-all text-sm text-gray-600 transition hover:text-emerald-700"
+                        href="https://wa.me/919341314387?text=Hello%20Simran%20Day%2FNight%20Spa%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="group inline-flex items-center justify-center gap-2 rounded-full bg-[#4CAF50] px-5 py-3.5 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#3D9141] hover:shadow-lg"
                       >
+                        <MessageCircle size={18} />
+
+                        WhatsApp
+
+                        <ArrowUpRight
+                          size={16}
+                          className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                        />
                       </a>
                     </div>
                   </div>
                 </FadeIn>
 
-                {/* Hours */}
+                {/* ==================== HOURS ==================== */}
                 <FadeIn direction="right" delay={0.4}>
-                  <div className="flex gap-4 rounded-2xl bg-white p-5 shadow-sm ring-1 ring-gray-100 transition duration-300 hover:-translate-y-1 hover:shadow-md">
-                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-emerald-50 text-emerald-700">
+                  <div className="flex gap-4 rounded-[1.25rem] border border-white/80 bg-white p-5 shadow-[0_10px_30px_rgba(63,74,56,0.06)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_15px_35px_rgba(63,74,56,0.11)]">
+                    <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[#D9C7A2]/50 bg-[#F1EEE3] text-[#8D713D]">
                       <Clock3 size={20} />
                     </div>
 
                     <div>
-                      <h3 className="font-bold text-gray-900">
+                      <h3 className="font-semibold text-[#252923]">
                         Opening Hours
                       </h3>
 
-                      <p className="mt-1 text-sm leading-6 text-gray-600">
+                      <p className="mt-1 text-sm leading-6 text-[#62675E]">
                         Monday - Sunday
                         <br />
                         9:00 AM - 8:00 PM
                       </p>
                     </div>
                   </div>
-
-                </FadeIn>                
-
-              </div>                       
-
+                </FadeIn>
+              </div>
             </div>
 
-            {/* Form */}
+            {/* ==================== CONTACT FORM ==================== */}
             <FadeIn direction="left" delay={0.15}>
-              <div className="rounded-3xl bg-white p-6 shadow-sm ring-1 ring-gray-100 sm:p-8 lg:p-10">
-
+              <div className="rounded-[1.5rem] border border-white/80 bg-white p-6 shadow-[0_12px_40px_rgba(63,74,56,0.08)] sm:p-8 lg:p-10">
                 {submitted ? (
                   <FadeIn>
                     <div className="flex min-h-[500px] flex-col items-center justify-center text-center">
-                      <div className="flex h-16 w-16 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">
+                      <div className="flex h-16 w-16 items-center justify-center rounded-full border border-[#D9C7A2]/60 bg-[#F1EEE3] text-[#8D713D]">
                         <Send size={28} />
                       </div>
 
-                      <h2 className="mt-6 text-2xl font-bold text-gray-900 sm:text-3xl">
+                      <h2 className="mt-6 text-2xl font-semibold text-[#252923] sm:text-3xl">
                         Message Sent Successfully!
                       </h2>
 
-                      <p className="mx-auto mt-4 max-w-md text-sm leading-7 text-gray-600">
+                      <div className="mx-auto mt-4 flex items-center justify-center gap-2">
+                        <span className="h-1 w-10 rounded-full bg-[#C6A96B]" />
+                        <span className="h-1 w-2 rounded-full bg-[#C6A96B]/50" />
+                      </div>
+
+                      <p className="mx-auto mt-5 max-w-md text-sm leading-7 text-[#62675E]">
                         Thank you, {formData.name}. We have received your
                         message and our team will get back to you shortly.
                       </p>
@@ -682,7 +702,7 @@ const Contact = () => {
                       <button
                         type="button"
                         onClick={handleNewMessage}
-                        className="mt-7 rounded-full bg-emerald-700 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-emerald-800 hover:shadow-lg"
+                        className="mt-7 rounded-full bg-[#3F4A38] px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-[#30382B] hover:shadow-lg"
                       >
                         Send Another Message
                       </button>
@@ -692,15 +712,22 @@ const Contact = () => {
                   <>
                     <FadeIn direction="left">
                       <div className="mb-7">
-                        <p className="text-sm font-semibold uppercase tracking-[0.15em] text-emerald-700">
-                          Send a Message
-                        </p>
+                        <div className="mb-4 flex items-center gap-3">
+                          <span className="h-px w-10 bg-[#C6A96B]" />
 
-                        <h2 className="mt-2 text-2xl font-bold text-gray-900 sm:text-3xl">
-                          How Can We Help?
+                          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8D713D]">
+                            Send a Message
+                          </p>
+                        </div>
+
+                        <h2 className="text-2xl font-semibold text-[#252923] sm:text-3xl">
+                          How Can We
+                          <span className="ml-2 font-light italic text-[#3F4A38]">
+                            Help?
+                          </span>
                         </h2>
 
-                        <p className="mt-3 text-sm leading-6 text-gray-600">
+                        <p className="mt-3 text-sm leading-6 text-[#62675E]">
                           Fill out the form and we'll get back to you as soon
                           as possible.
                         </p>
@@ -709,11 +736,10 @@ const Contact = () => {
 
                     <form onSubmit={handleSubmit}>
                       <div className="grid gap-5 sm:grid-cols-2">
-
-                        {/* Name */}
+                        {/* ==================== NAME ==================== */}
                         <FadeIn delay={0.1}>
                           <div>
-                            <label className="mb-2 block text-sm font-semibold text-gray-800">
+                            <label className="mb-2 block text-sm font-semibold text-[#3F433C]">
                               Full Name{" "}
                               <span className="text-red-500">*</span>
                             </label>
@@ -724,15 +750,15 @@ const Contact = () => {
                               value={formData.name}
                               onChange={handleChange}
                               placeholder="Enter your name"
-                              className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-sm outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+                              className="w-full rounded-xl border border-[#DDE1D7] bg-[#FBFCF9] px-4 py-3.5 text-sm text-[#252923] outline-none transition placeholder:text-[#9A9E96] focus:border-[#8D9A80] focus:bg-white focus:ring-2 focus:ring-[#D9E0D3]"
                             />
                           </div>
                         </FadeIn>
 
-                        {/* Email */}
+                        {/* ==================== EMAIL ==================== */}
                         <FadeIn delay={0.2}>
                           <div>
-                            <label className="mb-2 block text-sm font-semibold text-gray-800">
+                            <label className="mb-2 block text-sm font-semibold text-[#3F433C]">
                               Email Address{" "}
                               <span className="text-red-500">*</span>
                             </label>
@@ -743,15 +769,15 @@ const Contact = () => {
                               value={formData.email}
                               onChange={handleChange}
                               placeholder="Enter your email"
-                              className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-sm outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+                              className="w-full rounded-xl border border-[#DDE1D7] bg-[#FBFCF9] px-4 py-3.5 text-sm text-[#252923] outline-none transition placeholder:text-[#9A9E96] focus:border-[#8D9A80] focus:bg-white focus:ring-2 focus:ring-[#D9E0D3]"
                             />
                           </div>
                         </FadeIn>
 
-                        {/* Phone */}
+                        {/* ==================== PHONE ==================== */}
                         <FadeIn delay={0.3}>
                           <div className="sm:col-span-2">
-                            <label className="mb-2 block text-sm font-semibold text-gray-800">
+                            <label className="mb-2 block text-sm font-semibold text-[#3F433C]">
                               Phone Number
                             </label>
 
@@ -761,15 +787,15 @@ const Contact = () => {
                               value={formData.phone}
                               onChange={handleChange}
                               placeholder="Enter your phone number"
-                              className="w-full rounded-xl border border-gray-200 px-4 py-3.5 text-sm outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+                              className="w-full rounded-xl border border-[#DDE1D7] bg-[#FBFCF9] px-4 py-3.5 text-sm text-[#252923] outline-none transition placeholder:text-[#9A9E96] focus:border-[#8D9A80] focus:bg-white focus:ring-2 focus:ring-[#D9E0D3]"
                             />
                           </div>
                         </FadeIn>
 
-                        {/* Message */}
+                        {/* ==================== MESSAGE ==================== */}
                         <FadeIn delay={0.4}>
                           <div className="sm:col-span-2">
-                            <label className="mb-2 block text-sm font-semibold text-gray-800">
+                            <label className="mb-2 block text-sm font-semibold text-[#3F433C]">
                               Your Message{" "}
                               <span className="text-red-500">*</span>
                             </label>
@@ -777,7 +803,7 @@ const Contact = () => {
                             <div className="relative">
                               <MessageSquare
                                 size={18}
-                                className="pointer-events-none absolute left-4 top-4 text-gray-400"
+                                className="pointer-events-none absolute left-4 top-4 text-[#9A9E96]"
                               />
 
                               <textarea
@@ -786,34 +812,41 @@ const Contact = () => {
                                 onChange={handleChange}
                                 rows="7"
                                 placeholder="Write your message here..."
-                                className="w-full resize-none rounded-xl border border-gray-200 py-3.5 pl-11 pr-4 text-sm outline-none transition focus:border-emerald-600 focus:ring-2 focus:ring-emerald-100"
+                                className="w-full resize-none rounded-xl border border-[#DDE1D7] bg-[#FBFCF9] py-3.5 pl-11 pr-4 text-sm text-[#252923] outline-none transition placeholder:text-[#9A9E96] focus:border-[#8D9A80] focus:bg-white focus:ring-2 focus:ring-[#D9E0D3]"
                               />
                             </div>
                           </div>
                         </FadeIn>
                       </div>
 
-                      {/* Error */}
+                      {/* ==================== ERROR ==================== */}
                       {error && (
-                        <div className="mt-6 rounded-xl bg-red-50 px-4 py-3 text-sm font-medium text-red-600">
+                        <div className="mt-6 rounded-xl border border-red-100 bg-red-50 px-4 py-3 text-sm font-medium text-red-600">
                           {error}
                         </div>
                       )}
 
-                      {/* Submit */}
+                      {/* ==================== SUBMIT ==================== */}
                       <FadeIn delay={0.5}>
                         <button
                           type="submit"
                           disabled={loading}
-                          className="mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-emerald-700 px-6 py-4 text-sm font-bold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-emerald-800 hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:min-w-[190px]"
+                          className="group mt-7 inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#3F4A38] px-6 py-4 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:bg-[#30382B] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:min-w-[190px]"
                         >
                           <Send size={18} />
 
                           {loading ? "Sending..." : "Send Message"}
+
+                          {!loading && (
+                            <ArrowUpRight
+                              size={17}
+                              className="transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1"
+                            />
+                          )}
                         </button>
                       </FadeIn>
 
-                      <p className="mt-3 text-xs text-gray-500">
+                      <p className="mt-3 text-xs text-[#858A80]">
                         * Required fields. Your message will be sent to our
                         team.
                       </p>
@@ -822,78 +855,52 @@ const Contact = () => {
                 )}
               </div>
             </FadeIn>
-
           </div>
         </div>
       </section>
 
-      {/* Map / Location */}
-      {/* <section className="bg-white py-16 sm:py-20">
+      {/* ==================== MAP / LOCATION ==================== */}
+      <section className="bg-[#EFF2E7] pb-20 pt-4 sm:pb-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
           <FadeIn>
             <div className="mb-8 text-center">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-                Find Us
-              </p>
+              <div className="mb-4 flex items-center justify-center gap-3">
+                <span className="h-px w-10 bg-[#C6A96B]" />
 
-              <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-                Visit Simran Day/Night Spa
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#8D713D]">
+                  Find Us
+                </p>
+
+                <span className="h-px w-10 bg-[#C6A96B]" />
+              </div>
+
+              <h2 className="text-3xl font-semibold text-[#252923] sm:text-4xl">
+                Visit Our
+                <span className="ml-2 font-light italic text-[#3F4A38]">
+                  Spa
+                </span>
               </h2>
+
+              <div className="mt-5 flex items-center justify-center gap-2">
+                <span className="h-1 w-10 rounded-full bg-[#C6A96B]" />
+                <span className="h-1 w-2 rounded-full bg-[#C6A96B]/50" />
+              </div>
+
+              <p className="mx-auto mt-4 max-w-2xl text-sm leading-6 text-[#62675E] sm:text-base">
+                Find us at our Digha, West Bengal location.
+              </p>
             </div>
           </FadeIn>
 
           <FadeIn delay={0.15}>
-            <div className="flex min-h-[300px] items-center justify-center overflow-hidden rounded-3xl bg-emerald-50 p-8 text-center ring-1 ring-emerald-100 sm:min-h-[380px]">
-              <div>
-                <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-emerald-700 text-white">
-                  <MapPin size={28} />
-                </div>
-
-                <h3 className="mt-5 text-2xl font-bold text-gray-900">
-                  Simran Day/Night Spa
-                </h3>
-
-                <p className="mt-2 text-sm text-gray-600">
-                  Main Road, Wellness Avenue, India
-                </p>
-
-                <a
-                  href="https://www.google.com/maps"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="mt-5 inline-flex items-center rounded-full bg-emerald-700 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:-translate-y-1 hover:bg-emerald-800 hover:shadow-lg"
-                >
-                  Get Directions
-                </a>
+            <div className="overflow-hidden rounded-[1.5rem] border border-white/80 bg-white p-1.5 shadow-[0_12px_40px_rgba(63,74,56,0.09)]">
+              <div className="overflow-hidden rounded-[1.2rem]">
+                <LocationMap />
               </div>
             </div>
           </FadeIn>
-
         </div>
-      </section> */}
-
-        {/* Map / Location */}
-<section className="bg-white py-16 sm:py-20">
-  <FadeIn>
-    <div className="mb-8 text-center">
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-emerald-700">
-        Find Us
-      </p>
-
-      <h2 className="mt-3 text-3xl font-bold text-gray-900 sm:text-4xl">
-        Visit Simran Day/Night Spa
-      </h2>
-
-      <p className="mx-auto mt-3 max-w-2xl text-sm leading-6 text-gray-600 sm:text-base">
-        Find us at our Digha, West Bengal location.
-      </p>
-    </div>
-  </FadeIn>
-
-  <LocationMap />
-</section>
-
+      </section>
     </>
   );
 };
